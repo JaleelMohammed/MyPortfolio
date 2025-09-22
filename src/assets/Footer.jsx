@@ -42,7 +42,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-10 text-center text-sm text-gray-400">
-        ©{new Date().getFullYear()} Jaleel KM. All rights reserved. Made with <span className="text-pink-400">❤</span> and lots of <span className="text-amber-300">☕</span>.
+        ©{new Date().getFullYear()} Jaleel KM. All rights reserved.
       </div>
     </footer>
   );

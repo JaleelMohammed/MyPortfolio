@@ -211,6 +211,9 @@ import Footer from "./Footer";
 import profilePic from "../assets/profile.jpg";
 import resumeFile from "../assets/resume.pdf";
 import Contact from "./Contact";
+import Education from "./Education";
+import Skills from "./Skills";
+import Projects from "./Project";
 
 const Button = ({ children, className = "", ...props }) => (
   <button
@@ -221,7 +224,7 @@ const Button = ({ children, className = "", ...props }) => (
   </button>
 );
 
-export default function Portfolio() {
+export default function Home() {
   // AOS init (once)
   useEffect(() => {
     AOS.init({
@@ -234,11 +237,12 @@ export default function Portfolio() {
 
   // Typing effect
   const words = [
-    "Fullstack Developer",
-    "Frontend Developer",
-    "Backend Developer",
-    "React Enthusiast",
+    "FullStack Developer",
+    "BackEnd Developer",
+    "Java Developer",
     "Spring Boot Specialist",
+    "FrontEnd Developer",
+    "React Enthusiast",
   ];
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
@@ -278,7 +282,7 @@ export default function Portfolio() {
           <div>
            
           <h2 className="text-xl md:text-3xl text-white h-8 md:h-10 mb-2  font-semibold">A passionate
-            <span className="animate-pulse text-xl md:text-3xl px-2 text-blue-600 h-8 md:h-10 mb-6 font-semibold">
+            <span className="animate-pulse text-xl md:text-3xl px-2 text-blue-600 h-8 md:h-10 mb-6 font-bold">
                 {words[index].substring(0, subIndex)}
                |</span>
           </h2>
@@ -321,12 +325,12 @@ export default function Portfolio() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="py-20 px-6 md:px-20 bg-gradient-to-br from-[#1e2533] to-[#141821]">
+      <section id="about" className="py-20 px-6 md:px-20 bg-[#0a0a0f]">
         <div data-aos="fade-up" className=" max-w-3xl p-10 rounded-2xl border-1 mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
           <p className="text-gray-300 leading-relaxed">
             I'm a dedicated Fullstack Developer experienced in building scalable web applications with Java, Spring Boot,
-            REST APIs, MySQL, MongoDB, React and Tailwind CSS. I love crafting clean UIs and robust backends that feel
+            REST APIs, MySQL, React and Tailwind CSS. I love crafting clean UIs and robust backends that feel
             fast and delightful to use.
           </p>
         </div>
@@ -349,41 +353,18 @@ export default function Portfolio() {
         </div>
       </section> */}
        {/* Education Section */}
-      <section id="education" className="py-20 px-6 md:px-20 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 animate-fade-in-up">My Education</h2>
-        <div data-aos="fade-up" className=" max-w-3xl mx-auto space-y-8">
-          {/* Existing BCA Entry */}
-          <div className=" rounded-xl p-8 shadow-lg transition-all duration-300 border-1 hover:scale-[1.01] hover:bg transform">
-            <div data-aos="fade-left" className="  flex flex-col md:flex-row justify-between items-center mb-4">
-              <h3 className="text-3xl font-bold text-blue-600 mb-2 md:mb-0">Bachelor of Computer Applications (BCA)</h3>
-              <p className="text-gray-400 text-lg"> 2021-2024</p>
-            </div>
-            <p className="text-gray-300 text-xl mb-2">Mangalore University, Field Marshal K M Cariappa College</p>
-            <p className="text-gray-400 text-lg">Specialization in Computer Science and Applications</p>
-          </div>
+      <Education/>
 
-          {/* New PUC Entry */}
-          <div className="border-1 rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-[1.01]  transform">
-            <div className="flex flex-col md:flex-row justify-between items-center mb-4">
-              <h3 className="text-3xl font-bold text-blue-600 mb-2 md:mb-0  md:mx-auto">Pre Univercity College in GEBA (PUC)</h3>
-              <p className="text-gray-400 text-lg">2019 - 2021</p>
-            </div>
-            <p className="text-gray-300 text-xl mb-2">Aruna P U College,Kodagu </p>
-            <p className="text-gray-400 text-lg">Pre University Course (Geography, Economics, Business Studies, Accountancy)</p>
-          </div>
-        </div>
-      </section>
+      {/* SKILLS  */}
+      <Skills/>
 
-      {/* SKILLS (your existing animated section) */}
-      <SkillsSection />
+      {/* PROJECTS  */}
+      <Projects/>
 
-      {/* PROJECTS – matches your screenshot layout */}
-      <ProjectsSection />
+      {/* CONTACT  */}
+      <Contact/>
 
-      {/* CONTACT – matches your screenshot layout */}
-      <Contact />
-
-      {/* FOOTER – matches your screenshot layout */}
+      {/* FOOTER */}
       <Footer />
     </main>
   );

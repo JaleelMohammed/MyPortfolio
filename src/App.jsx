@@ -1,5 +1,6 @@
+import Home from "./assets/Home"
 import Navbar from "./assets/Navbar"
-import Portfolio from "./assets/Portfolio"
+
 
 function App() {
   
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Portfolio/>
+      <Home/>
       {/* <h1 className='text-amber-200'>hello</h1> */}
     </>
   )

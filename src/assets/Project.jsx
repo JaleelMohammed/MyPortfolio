@@ -1,30 +1,33 @@
 import { motion } from "framer-motion";
-// import {img1} from './profile.jpg'
+import foodDeliveryImg from '../assets/food-delivery.png';
+import jobPortalImg from '../assets/Job-port.png';
+import redStoreImg from '../assets/red-store.png';
+import rjTechImg from '../assets/rj-tech.png';
 
 const projects = [
   {
     title: "Job-Portal Fullsatck WebApp",
     description: "A modern Job-Portal website built with React and TailwindCSS.",
-    image: "" ,// Replace with your image
+    image: jobPortalImg ,// Replace with your image
     link: "https://job-port-full-stack.vercel.app/",
   },
   {
     title: "Food Delivery WebApp",
     description: "Full-stack e-commerce platform with cart and payment features.",
+    image: foodDeliveryImg,
     link: "https://delivery-app-seven-weld.vercel.app/",
-    image: "#",
-  },
-  {
-    title: "RedStore E-commerce App",
-    description: "Real-time chat app using WebSocket and Node.js backend.",
-    image: "",
-    link: "https://jaleelmohammed.github.io/RedStore/",
   },
   {
     title: "RJ Technology Website",
     description: "A modern web application showcasing technology solutions",
-    image: "",
+    image: rjTechImg,
     link: "https://rjtechnology-gray.vercel.app/",
+  },
+  {
+    title: "RedStore E-commerce App",
+    description: "RedStore is a full‑front‑end e‑commerce style website. It showcases products",
+    image: redStoreImg,
+    link: "https://jaleelmohammed.github.io/RedStore/",
   },
 ];
 
@@ -55,7 +58,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="group bg-[#1e2533] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:shadow-[#38BDF8]/30 transition"
+              className="group bg-[#1e2533] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:shadow-[#38BDF8]/10 transition"
             >
               {/* Image */}
               <div className="h-48 bg-gray-700 flex items-center justify-center">
@@ -68,7 +71,7 @@ export default function Projects() {
 
               {/* Content */}
               <div className="p-6 text-left">
-                <h3 className="text-xl font-semibold mb-2 text-white group-hover:text-[#38BDF8] transition">
+                <h3 className="text-xl font-semibold mb-2 text-white group-hover:text-[#383ef8] transition">
                   {proj.title}
                 </h3>
                 <p className="text-gray-400 text-sm mb-4">{proj.description}</p>
