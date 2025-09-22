@@ -282,7 +282,7 @@ export default function Home() {
           <div>
            
           <h2 className="text-xl md:text-3xl text-white h-8 md:h-10 mb-2  font-semibold">A passionate
-            <span className="animate-pulse text-xl md:text-3xl px-2 text-blue-600 h-8 md:h-10 mb-6 font-bold">
+            <span className="animate-puls text-xl md:text-3xl px-2 text-blue-600 h-8 md:h-10 mb-6 font-bold">
                 {words[index].substring(0, subIndex)}
                |</span>
           </h2>

@@ -7,7 +7,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { name: "Home", href: "/home" },
+    { name: "Home", href: "/" },
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
@@ -20,7 +20,7 @@ export default function Navbar() {
     <nav className="fixed w-full top-0 z-50 bg-[#0a0a0f]/90 backdrop-blur-md border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="/home" className="text-2xl font-bold text-blue-600">
+        <a href="/" className="text-2xl font-bold text-blue-600">
           MyPortfolio
         </a>
 
