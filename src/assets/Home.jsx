@@ -274,7 +274,7 @@ export default function Home() {
     data-aos="zoom-in"
     src={profilePic}
     alt="Profile"
-    className="w-full h-full rounded-full border-2 border-[#5031ff] shadow-2xl object-cover relative z-10"
+    className="w-full h-full rounded-full border-2 border-blue-600 shadow-2xl object-cover relative z-10"
   />
 </div>
 
