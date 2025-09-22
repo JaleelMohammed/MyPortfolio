@@ -20,8 +20,10 @@ export default function Navbar() {
     <nav className="fixed w-full top-0 z-50 bg-[#0a0a0f]/90 backdrop-blur-md border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="text-2xl font-bold text-blue-600">
-          MyPortfolio
+        <a href="/" className="text-2xl font-bold ">
+          <div className="bg-[#dfdfdf]  text-blue-600 font-extraboldbold  rounded-full h-13 w-13 md:h-15 md:w-15 flex items-center justify-center border-1">
+            JM
+          </div>
         </a>
 
         {/* Desktop Menu */}
@@ -30,7 +32,7 @@ export default function Navbar() {
             <li key={idx}>
               <a
                 href={link.href}
-                className="hover:text-[#38BDF8] transition font-medium"
+                className="hover:text-[#384ef8] transition font-medium"
               >
                 {link.name}
               </a>

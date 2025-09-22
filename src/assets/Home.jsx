@@ -268,12 +268,21 @@ export default function Home() {
     <main className="bg-[#0a0a0f] text-white">
       {/* HERO */}
       <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-8 px-6 md:px-20 py-16">
-        <img
-          data-aos="zoom-in"
-          src={profilePic}
-          alt="Profile"
-          className="w-44 h-44 md:w-76 md:h-76 rounded-full border-4 border-[#1e2533] shadow-2xl object-cover"
-        />
+       <div className="relative w-44 h-44 md:w-76 md:h-76">
+  <div className="absolute inset-0 rounded-full border-3 border-[#221183] animate-spin-slow"></div>
+  <img
+    data-aos="zoom-in"
+    src={profilePic}
+    alt="Profile"
+    className="w-full h-full rounded-full border-2 border-[#5031ff] shadow-2xl object-cover relative z-10"
+  />
+</div>
+
+
+
+
+
+
 
         <div data-aos="fade-up" data-aos-delay="150" className="text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
