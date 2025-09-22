@@ -7,14 +7,14 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
         {/* Brand + blurb */}
         <div>
-          <div className="text-2xl font-extrabold text-sky-400">Portfolio</div>
+          <div className="text-2xl font-extrabold text-blue-600">Portfolio</div>
           <p className="mt-3 text-gray-300">
             Passionate Full Stack Developer creating innovative digital solutions that make a difference.
             Let’s build something amazing together!
           </p>
           <div className="flex gap-3 mt-4 text-lg">
-            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noreferrer" className="hover:text-sky-400"><FaLinkedin /></a>
-            <a href="https://github.com/yourgithub" target="_blank" rel="noreferrer" className="hover:text-sky-400"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/jaleel-mohammed" target="_blank" rel="noreferrer" className="hover:text-sky-400"><FaLinkedin /></a>
+            <a href="https://github.com/JaleelMohammed" target="_blank" rel="noreferrer" className="hover:text-sky-400"><FaGithub /></a>
             <a href="#" className="hover:text-sky-400"><FaInstagram /></a>
           </div>
         </div>
@@ -34,15 +34,15 @@ export default function Footer() {
         <div>
           <h4 className="font-bold mb-3">Contact Info</h4>
           <ul className="space-y-2 text-gray-300">
-            <li className="flex items-center gap-2"><MdEmail /> john.doe@email.com</li>
-            <li className="flex items-center gap-2"><FaPhoneAlt /> +1 (555) 123-4567</li>
-            <li className="flex items-center gap-2"><FaMapMarkerAlt /> San Francisco, CA</li>
+            <li className="flex items-center gap-2"><MdEmail /> iamjaleelmohammed@email.com</li>
+            <li className="flex items-center gap-2"><FaPhoneAlt /> +1 555123-4567</li>
+            <li className="flex items-center gap-2"><FaMapMarkerAlt /> Bengalore, india</li>
           </ul>
         </div>
       </div>
 
       <div className="mt-10 text-center text-sm text-gray-400">
-        ©{new Date().getFullYear()} Your Name. All rights reserved. Made with <span className="text-pink-400">❤</span> and lots of <span className="text-amber-300">☕</span>.
+        ©{new Date().getFullYear()} Jaleel KM. All rights reserved. Made with <span className="text-pink-400">❤</span> and lots of <span className="text-amber-300">☕</span>.
       </div>
     </footer>
   );

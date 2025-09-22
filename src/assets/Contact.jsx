@@ -40,7 +40,7 @@ export default function Contact() {
           ></textarea>
           <button
             type="submit"
-            className="px-6 py-3 bg-[#38BDF8] text-black font-semibold rounded-lg hover:bg-[#2eaad7] transition w-fit mx-auto"
+            className="px-6 py-3 bg-blue-600 text-black font-semibold rounded-lg hover:bg-blue-700 transition w-full mx-auto"
           >
             Send Message
           </button>
@@ -49,7 +49,7 @@ export default function Contact() {
         {/* ✅ Social Links */}
         <div className="flex justify-center gap-6 mt-10 text-3xl">
           <a
-            href="https://github.com/yourgithub"
+            href="https://github.com/JaleelMohammed"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#38BDF8] transition"
@@ -57,10 +57,10 @@ export default function Contact() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourlinkedin"
+            href="https://www.linkedin.com/in/jaleel-mohammed"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#38BDF8] transition"
+            className="hover:text-blue-600 transition "
           >
             <FaLinkedin />
           </a>

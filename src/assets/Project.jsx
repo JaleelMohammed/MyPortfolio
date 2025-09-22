@@ -1,23 +1,30 @@
 import { motion } from "framer-motion";
+// import {img1} from './profile.jpg'
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "A modern portfolio website built with React and TailwindCSS.",
-    image: "https://via.placeholder.com/600x400", // Replace with your image
-    link: "#",
+    title: "Job-Portal Fullsatck WebApp",
+    description: "A modern Job-Portal website built with React and TailwindCSS.",
+    image: "" ,// Replace with your image
+    link: "https://job-port-full-stack.vercel.app/",
   },
   {
-    title: "E-commerce App",
+    title: "Food Delivery WebApp",
     description: "Full-stack e-commerce platform with cart and payment features.",
-    image: "https://via.placeholder.com/600x400",
-    link: "#",
+    link: "https://delivery-app-seven-weld.vercel.app/",
+    image: "#",
   },
   {
-    title: "Chat Application",
+    title: "RedStore E-commerce App",
     description: "Real-time chat app using WebSocket and Node.js backend.",
-    image: "https://via.placeholder.com/600x400",
-    link: "#",
+    image: "",
+    link: "https://jaleelmohammed.github.io/RedStore/",
+  },
+  {
+    title: "RJ Technology Website",
+    description: "A modern web application showcasing technology solutions",
+    image: "",
+    link: "https://rjtechnology-gray.vercel.app/",
   },
 ];
 
@@ -67,7 +74,7 @@ export default function Projects() {
                 <p className="text-gray-400 text-sm mb-4">{proj.description}</p>
                 <a
                   href={proj.link}
-                  className="text-[#38BDF8] font-medium hover:underline"
+                  className="text-blue-600 font-medium hover:underline"
                 >
                   View Details →
                 </a>

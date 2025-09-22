@@ -155,10 +155,10 @@ const skills = {
     { name: "TypeScript", level: 80, color: "#3178C6", icon: SiTypescript },
     { name: "React", level: 92, color: "#61DAFB", icon: FaReact },
     { name: "Tailwind CSS", level: 85, color: "#38BDF8", icon: SiTailwindcss },
-    { name: "Bootstrap", level: 80, color: "#7952B3", icon: SiBootstrap },
+    { name: "Bootstrap", level: 90, color: "#7952B3", icon: SiBootstrap },
   ],
   Backend: [
-    { name: "Java", level: 90, color: "#007396", icon: FaJava },
+    { name: "Java", level: 90, color: "#CB3837", icon: FaJava },
     { name: "Spring Boot", level: 85, color: "#6DB33F", icon: SiSpringboot },
     { name: "Hibernate", level: 80, color: "#59666C", icon: SiHibernate },
     { name: "RESTful APIs", level: 85, color: "#FF5733", icon: SiExpress },
@@ -168,7 +168,7 @@ const skills = {
   ],
   Tools: [
     { name: "Git", level: 90, color: "#F05032", icon: FaGitAlt },
-    { name: "GitHub", level: 88, color: "#181717", icon: FaGithub },
+    { name: "GitHub", level: 88, color: "#59666d", icon: FaGithub },
     { name: "Postman", level: 80, color: "#FF6C37", icon: SiPostman },
     { name: "Jira", level: 75, color: "#0052CC", icon: SiJirasoftware },
     { name: "npm", level: 85, color: "#CB3837", icon: SiNpm },
@@ -213,7 +213,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.4 }}
           viewport={{ once: true }}
         >
-          My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Skills</span>
+          My <span className="text-transparent bg-clip-text bg-blue-600 ">Skills</span>
         </motion.h2>
         <motion.p 
           className="text-gray-400 text-center text-sm max-w-xl mx-auto mb-12"
@@ -238,7 +238,7 @@ export default function SkillsSection() {
               className="bg-gradient-to-br from-[#1a1f2e] to-[#161a27] p-5 rounded-xl shadow-lg border border-gray-800 relative overflow-hidden"
             >
               {/* Subtle gradient accent */}
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-600"></div>
+              <div className="absolute top-0 left-0 w-full h-1 bg-blue-600 "></div>
               
               <div className="relative">
                 <h3 className="text-lg font-semibold mb-4 text-center flex items-center justify-center">

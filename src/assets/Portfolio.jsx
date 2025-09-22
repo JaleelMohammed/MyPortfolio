@@ -207,10 +207,10 @@ import AOS from "aos";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import SkillsSection from "./Skills";
 import ProjectsSection from "./Project";
-import ContactSection from "./Contact";
 import Footer from "./Footer";
 import profilePic from "../assets/profile.jpg";
 import resumeFile from "../assets/resume.pdf";
+import Contact from "./Contact";
 
 const Button = ({ children, className = "", ...props }) => (
   <button
@@ -268,27 +268,31 @@ export default function Portfolio() {
           data-aos="zoom-in"
           src={profilePic}
           alt="Profile"
-          className="w-44 h-44 md:w-56 md:h-56 rounded-full border-4 border-[#1e2533] shadow-2xl object-cover"
+          className="w-44 h-44 md:w-76 md:h-76 rounded-full border-4 border-[#1e2533] shadow-2xl object-cover"
         />
 
         <div data-aos="fade-up" data-aos-delay="150" className="text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Hi, I'm <span className="text-[#38BDF8]">Your Name</span>
+            Hi, I'm <span className="text-blue-600">Jaleel KM</span>
           </h1>
-          <h2 className="text-xl md:text-2xl text-[#38BDF8] h-8 md:h-10 mb-6 font-semibold">
-            {words[index].substring(0, subIndex)}
-            <span className="animate-pulse">|</span>
+          <div>
+           
+          <h2 className="text-xl md:text-3xl text-white h-8 md:h-10 mb-2  font-semibold">A passionate
+            <span className="animate-pulse text-xl md:text-3xl px-2 text-blue-600 h-8 md:h-10 mb-6 font-semibold">
+                {words[index].substring(0, subIndex)}
+               |</span>
           </h2>
+          </div>
           <p className="text-gray-300 max-w-lg mb-6">
-            Passionate developer skilled in Java, Spring Boot, React, and modern web technologies.
+            Dedicated to building beautiful, responsive, and highly interactive web applications. I love bringing ideas to life through clean and efficient code.
           </p>
 
           <div className="flex justify-center md:justify-start gap-4 mb-6">
             <a href="#skills">
-              <Button className="bg-[#38BDF8] text-black hover:bg-[#2eaad7]">View Skills</Button>
+              <Button className="bg-blue-600 text-black hover:bg-blue-700">View Skills</Button>
             </a>
             <a href={resumeFile} download>
-              <Button className="bg-[#1e2533] text-white border border-[#38BDF8] hover:bg-[#141821]">
+              <Button className="bg-[#1e2533] text-white border border-blue-600 hover:bg-[#141821]">
                 Download Resume
               </Button>
             </a>
@@ -297,7 +301,7 @@ export default function Portfolio() {
           {/* Social on Home (as requested) */}
           <div className="flex justify-center md:justify-start gap-6 text-3xl">
             <a
-              href="https://github.com/yourgithub"
+              href="https://github.com/JaleelMohammed"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#38BDF8]"
@@ -305,7 +309,7 @@ export default function Portfolio() {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/in/yourlinkedin"
+              href="https://www.linkedin.com/in/jaleel-mohammed"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#38BDF8]"
@@ -318,7 +322,7 @@ export default function Portfolio() {
 
       {/* ABOUT */}
       <section id="about" className="py-20 px-6 md:px-20 bg-gradient-to-br from-[#1e2533] to-[#141821]">
-        <div data-aos="fade-up" className="max-w-3xl mx-auto text-center">
+        <div data-aos="fade-up" className=" max-w-3xl p-10 rounded-2xl border-1 mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
           <p className="text-gray-300 leading-relaxed">
             I'm a dedicated Fullstack Developer experienced in building scalable web applications with Java, Spring Boot,
@@ -329,7 +333,7 @@ export default function Portfolio() {
       </section>
 
       {/* EDUCATION */}
-      <section id="education" className="py-20 px-6 md:px-20">
+      {/* <section id="education" className="py-20 px-6 md:px-20">
         <div data-aos="fade-up" className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-10">Education</h2>
           <div className="grid gap-6">
@@ -343,6 +347,31 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
+      </section> */}
+       {/* Education Section */}
+      <section id="education" className="py-20 px-6 md:px-20 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 animate-fade-in-up">My Education</h2>
+        <div data-aos="fade-up" className=" max-w-3xl mx-auto space-y-8">
+          {/* Existing BCA Entry */}
+          <div className=" rounded-xl p-8 shadow-lg transition-all duration-300 border-1 hover:scale-[1.01] hover:bg transform">
+            <div data-aos="fade-left" className="  flex flex-col md:flex-row justify-between items-center mb-4">
+              <h3 className="text-3xl font-bold text-blue-600 mb-2 md:mb-0">Bachelor of Computer Applications (BCA)</h3>
+              <p className="text-gray-400 text-lg"> 2021-2024</p>
+            </div>
+            <p className="text-gray-300 text-xl mb-2">Mangalore University, Field Marshal K M Cariappa College</p>
+            <p className="text-gray-400 text-lg">Specialization in Computer Science and Applications</p>
+          </div>
+
+          {/* New PUC Entry */}
+          <div className="border-1 rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-[1.01]  transform">
+            <div className="flex flex-col md:flex-row justify-between items-center mb-4">
+              <h3 className="text-3xl font-bold text-blue-600 mb-2 md:mb-0  md:mx-auto">Pre Univercity College in GEBA (PUC)</h3>
+              <p className="text-gray-400 text-lg">2019 - 2021</p>
+            </div>
+            <p className="text-gray-300 text-xl mb-2">Aruna P U College,Kodagu </p>
+            <p className="text-gray-400 text-lg">Pre University Course (Geography, Economics, Business Studies, Accountancy)</p>
+          </div>
+        </div>
       </section>
 
       {/* SKILLS (your existing animated section) */}
@@ -352,7 +381,7 @@ export default function Portfolio() {
       <ProjectsSection />
 
       {/* CONTACT – matches your screenshot layout */}
-      <ContactSection />
+      <Contact />
 
       {/* FOOTER – matches your screenshot layout */}
       <Footer />
