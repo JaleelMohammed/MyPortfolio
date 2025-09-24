@@ -209,7 +209,7 @@ import SkillsSection from "./Skills";
 import ProjectsSection from "./Project";
 import Footer from "./Footer";
 import profilePic from "../assets/profile.jpg";
-import resumeFile from "../assets/resume.pdf";
+import resumeFile from "../assets/Jaleel_KM_Resume.pdf";
 import Contact from "./Contact";
 import Education from "./Education";
 import Skills from "./Skills";
@@ -277,13 +277,6 @@ export default function Home() {
     className="w-full h-full rounded-full border-2 border-blue-600 shadow-2xl object-cover relative z-10"
   />
 </div>
-
-
-
-
-
-
-
         <div data-aos="fade-up" data-aos-delay="150" className="text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Hi, I'm <span className="text-blue-600">Jaleel KM</span>
@@ -345,22 +338,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* EDUCATION */}
-      {/* <section id="education" className="py-20 px-6 md:px-20">
-        <div data-aos="fade-up" className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-10">Education</h2>
-          <div className="grid gap-6">
-            <div data-aos="fade-right" className="bg-[#1e2533] p-6 rounded-lg shadow-lg text-left">
-              <h3 className="text-xl font-semibold text-[#38BDF8]">B.Tech in Computer Science</h3>
-              <p className="text-gray-300">XYZ University — 2019–2023</p>
-            </div>
-            <div data-aos="fade-left" className="bg-[#1e2533] p-6 rounded-lg shadow-lg text-left">
-              <h3 className="text-xl font-semibold text-[#38BDF8]">Higher Secondary</h3>
-              <p className="text-gray-300">ABC School — 2017–2019</p>
-            </div>
-          </div>
-        </div>
-      </section> */}
        {/* Education Section */}
       <Education/>
 
