@@ -35,7 +35,7 @@ export default function Footer() {
           <h4 className="font-bold mb-3">Contact Info</h4>
           <ul className="space-y-2 text-gray-300">
             <li className="flex items-center gap-2"><MdEmail /> iamjaleelmohammed@email.com</li>
-            <li className="flex items-center gap-2"><FaPhoneAlt /> +1 555123-4567</li>
+            <li className="flex items-center gap-2"><FaPhoneAlt /> +91 000000000</li>
             <li className="flex items-center gap-2"><FaMapMarkerAlt /> Bengalore, india</li>
           </ul>
         </div>
